@@ -1,0 +1,92 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~weather-icons/css/weather-icons.min.css";
+
+.flexCenterAlign {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.otherWeatherParams {
+    display: flex;
+    align-self: center;
+    margin-top: -10px;
+}
+
+.title {
+    animation: leftToRight 2s infinite;
+    position: absolute;
+    font-size: 30px;
+}
+
+.city {
+    font-size: 37px;
+}
+
+.today-date {
+    margin-top: -22px;
+    font-size: 13px;
+}
+
+.temp {
+    margin-top: 62px;
+    font-size: 55px;
+}
+
+.icondescr {
+    display: flex;
+    flex-direction: row;
+    margin-top: -23px;
+}
+
+.weather-icon {
+    color: #5077a6;
+    font-size: 55px;
+}
+
+.weather-description {
+    align-self: center;
+    margin-left: 12px;
+}
+
+.margin-top-35 {
+    margin-top: 35px;
+}
+
+.line-between {
+    margin: 37px 0px;
+    border: 1px solid darkgray;
+    width: 300px;
+}
+
+.margin-right-30 {
+    margin-right: 30px;
+}
+
+.font-size-14 {
+    font-size: 14px;
+}
+.font-size-16 {
+    font-size: 16px;
+}
+.font-size-21 {
+    font-size: 21px;
+}
+
+@keyframes leftToRight {
+    from {
+        left: 0px;
+    }
+
+    30% {
+        left: 70px;
+    }
+
+    60% {
+        left: 125px;
+    }
+
+    to {
+        left: 200px;
+    }
+}

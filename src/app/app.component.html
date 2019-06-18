@@ -1,0 +1,32 @@
+<section class="flexCenterAlign">
+  <!-- <header class="title">Weather App</header> -->
+  <section class="flexCenterAlign">
+    <div class="margin-top-35">
+        <p class="city">{{cityInfo?.name}}</p>
+        <p class="today-date">{{currentDate}}</p>  
+    </div>
+    <p class="temp">{{getKelvinToCelsius(currentData?.temp) | number : '0.2-2'}}℃</p>
+    <div class="icondescr">
+      <i class="wi {{getIcon(tempInfo?.id)}} weather-icon"></i>
+      <span class="weather-description">{{tempInfo?.description}}</span>
+    </div>
+    <hr class="line-between">
+    <section class="otherWeatherParams">
+      <div class="flexCenterAlign margin-right-30">
+        <span class="font-size-16">Wind</span>
+        <span class="font-size-21">{{this.weatherInfo?.list[0].wind.speed}}</span>
+        <span class="font-size-14">km/h</span>
+      </div>
+      <div class="flexCenterAlign margin-right-30 font-size-16">
+        <span class="font-size-16">Rain</span>
+        <span class="font-size-21">{{this.weatherInfo?.list[0].rain['3h']}}</span>
+        <span class="font-size-14">%</span>
+      </div>
+      <div class="flexCenterAlign margin-right-30 font-size-16">
+        <span class="font-size-16">Humidity</span>
+        <span class="font-size-21">{{currentData?.humidity}}</span>
+        <span class="font-size-14">%</span>
+      </div>
+    </section>
+  </section>
+</section>
